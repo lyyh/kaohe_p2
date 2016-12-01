@@ -1,0 +1,410 @@
+body{
+    min-width: 1440px;
+    margin: 0 auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+img{
+    cursor: pointer;
+
+}
+.over{
+    overflow: hidden;
+}
+.float{
+    float: left;
+}
+/*@*/
+
+/*top*/
+.top{
+    width: 100%;
+    height: 36px;
+    background-color: #333333;
+}
+.top-l{
+    line-height: 36px;
+    margin-left: 55px;
+}
+.top-l-p1{
+    color: #bababa;
+    font-family: 华文仿宋;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.top-l-p2{
+    color: #ffffff;
+    font-family: 华文仿宋;
+    margin-left: 22px;
+    font-size: 14px;
+}
+.top-r{
+    float: right;
+}
+.top-r-p1{
+    line-height: 36px;
+    color: #bababa;
+    font-size: 14px;
+    margin-left: 35px;
+}
+.top-r-p2{
+    margin-top: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 0 8px;
+    border: 1px solid #bababa;
+    text-align: center;
+    line-height: 16px;
+    color: #bababa;
+    margin-left: 35px;
+}
+.top-r-img{
+    margin-left: 35px;
+}
+.top-r-images{
+    margin-right: 30px;
+    margin-top: 5px;
+}
+/*top*/
+
+/*nav*/
+.nav{
+    height: 95px;
+    width: 100%;
+}
+.logo{
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+/*下拉*/
+.naves {
+    text-align: center;
+    font-size: 20px;
+    float: right;
+    height: 60px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+.naves-ul2 {
+    display: none;
+}
+.naves-li1:hover  .naves-ul2 {
+    display: block;
+}
+.naves-ul1{
+    list-style: none;
+    position: relative;
+    height: 60px;
+}
+.naves-ul1:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.naves-li1{
+    float: left;
+    width: 80px;
+    padding: 20px 15px;
+}
+.naves-li1:hover{
+    background: #275599;
+}
+.naves-li1 a:link{
+    color: #000000;
+}
+.naves-li1 a:visited{
+    color: #000000;
+}
+.naves-li1 a:hover{
+    color: #ffffff;
+}
+.naves-li1 a{
+    display: block;
+    text-decoration: none;
+}
+.naves-ul2{
+    background: #efefef;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    margin-left: -15px;
+}
+.naves-li2{
+    float: none;
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+    list-style-type: none;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+}
+.naves-li2{
+    color: #757575;
+}
+.naves-li2:hover{
+    background: #275599;
+    color: #fff;
+}
+/*下拉*/
+.naves-img{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+/*nav*/
+
+/*pic*/
+.pic{
+    width: 100%;
+    height: 525px;
+}
+.pic img{
+    width: 100%;
+}
+/*pic*/
+
+/*show*/
+.show{
+    width: 100%;
+    height: 395px;
+}
+.show-u{
+    height: 80px;
+}
+.show-u-p1{
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 55px;
+}
+.show-u-p2{
+    color: #8e8d8d;
+    font-size: 14px;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+.show-m{
+    height: 190px;
+    width: 1340px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.show-m img{
+    margin-right: 70px;
+}
+.show-d{
+    height: 80px;
+}
+.show-d-p1{
+    font-size: 28px;
+    margin-top: 40px;
+    margin-left: 55px;
+}
+.show-d-p2{
+    color: #8e8d8d;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+/*show*/
+
+/*ord*/
+.ord{
+    width: 100%;
+    height: 430px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.all-ord{
+    /*padding: 0 12px;*/
+    width: 1310px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.ords{
+    width: 240px;
+    height: 405px;
+    margin-right: 24px;
+    background-color: #ffffff;
+}
+.ord-u{
+    width: 175px;
+    height: 100px;
+    border-bottom: 1px solid #d4d4d4;
+    margin: 0 auto;
+    font-size: 60px;
+    text-align: center;
+    color: #8d8b8b;
+    font-family: FZYTJW;
+}
+.ords p{
+    color: #8d8b8b;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+.ords-img{
+    margin:65px 0 0 40px;
+}
+.ords-img img{
+    border-radius: 15px;
+}
+/*ord*/
+
+/*case*/
+.case{
+    height: 555px;
+    width: 100%;
+}
+.case-u-p1{
+    font-size: 28px;
+    margin-top: 40px;
+    margin-left: 55px;
+}
+.case-u-p2{
+    color: #8e8d8d;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.cases{
+    width: 310px;
+    background-color: #f5f5f5;
+    height: 400px;
+    margin-right: 30px;
+}
+.case-d{
+    margin: 0 auto;
+    width: 1330px;
+    margin-top: 25px;
+}
+.case-d-imgs{
+    margin-top: 15px;
+    width: 120px;
+    margin-top: 20px;
+    float: right;
+}
+.case-d-p1{
+    font-size: 14px;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.case-d-p2{
+    font-size: 14px;
+    width: 245px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+/*case*/
+
+/*peo*/
+.peo{
+    width: 100%;
+    height: 500px;
+}
+.peo-all{
+    width: 1330px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.peo-l{
+
+}
+.peo-l-p1{
+    font-size: 28px;
+}
+.peo-l-p2{
+    color: #8e8d8d;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.peo-l-d{
+    margin-top: 28px;
+    background-color: #f5f5f5;
+    height: 390px;
+    width: 830px;
+}
+.peos{
+    width: 265px;
+    height: 145px;
+    margin: 30px 0 20px 10px;
+}
+.peos-img{
+
+}
+.peos-p{
+    height: 90px;
+    width: 100px;
+    margin: 30px 0 0 20px;
+}
+.peos-p1{
+    font-size: 18px;
+}
+.peos-p2{
+    font-size: 14px;
+    width: 105px;
+    height: 51px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.peo-r{
+    width: 470px;
+    height: 445px;
+    margin-left: 30px;
+}
+.peo-r-p1{
+    font-size: 28px;
+}
+.peo-r-p2{
+    color: #8e8d8d;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.peo-r-d{
+    height: 390px;
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 28px;
+}
+.peo-r-li{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 25px 0;
+}
+.li-num{
+    font-size: 20px;
+    margin: 0 40px 0 25px;
+}
+/*people*/
+
+/*strategy*/
+.str{
+    height: 545px;
+    width: 100%;
+}
+.str-u-p1{
+    font-size: 28px;
+    margin-left: 55px;
+}
+.str-u-p2{
+    color: #8e8d8d;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.str-d{
+    width: 1330px;
+    height: 440px;
+    margin: 0 auto;
+    margin: 40px 0 0 55px;
+    background-color: #f5f5f5;
+}
