@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        #list img{
+            width: 1440px;
+            /*height: 526px;*/
+            height: 900px;
+            float: left;
+        }
+        #picture{
+            width: 1440px;
+            overflow: hidden;
+            /*height: 526px;*/
+            height: 900px;
+            position: relative;
+        }
+        #list {
+            width: 7200px;
+            /*height: 526px;*/
+            height: 900px;
+            position: absolute;
+            z-index: 1;
+        }
+        #buttons {
+            position: absolute;
+            height: 10px;
+            width: 100px;
+            z-index: 2;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -50px;
+        }
+        #buttons span {
+            cursor: pointer;
+            float: left;
+            border: 1px solid #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #5ccdbf;
+            margin-right: 5px;
+        }
+        #buttons .on {
+            background: red;
+        }
+        .arrow {
+            cursor: pointer;
+            display: none;
+            line-height: 39px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            width: 40px;
+            height: 35px;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            background-color: #4b545f;
+            color: #fff;
+        }
+        .arrow {
+            display: block;
+        }
+        #prev {
+            left: 20px;
+        }
+        #next {
+            right: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        //当网页加载完了才运行
+        window.onload = function(){
+            var picture = document.getElementById("picture");
+            //获取容器，getElementById用来获取id
+            var list = document.getElementById("list");
+            //获取list列表
+            var buttons = document.getElementById("buttons").getElementsByTagName("span");
+            //获取按钮
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+            //获取左右按钮
+            var index = 1;
+            var animated = false;
+            var timer;
+
+            function showButton(){
+                for (var i = 0;i <buttons.length; i++){
+                    if (buttons[i].className == "on") {
+                        buttons[i].className = "";
+                        break;
+                    }
+                }
+                buttons[index - 1].className = "on";
+            }
+            //以上规定下面的小灯
+
+            function animate(offset){
+                animated = true;
+                var newleft = parseInt(list.style.left) + offset;
+                var time = 1000;//总时间
+                var interval = 10;//间隔时间
+                var speed = offset/(time/interval);//每次移动距离
+
+                //下面是自动轮播
+                function go(){
+                    if ((speed < 0 && parseInt(list.style.left)>newleft) || (speed > 0 && parseInt(list.style.left) < newleft)){
+                        list.style.left = parseInt(list.style.left) + speed +"px";
+                        setTimeout(go,interval);
+                    }
+                    else {
+                        animated = false;
+                        list.style.left = newleft + "px";
+                        if(newleft > -1440) {
+                            list.style.left = -4320 + "px";
+                        }
+                        if(newleft < -4320) {
+                            list.style.left = -1440 + "px";
+                        }
+                    }
+                }
+                go();
+
+            }
+            //以上是点击按钮的总函数
+
+            function play(){
+                timer = setInterval(function(){
+                    next.onclick();
+                },5000);
+            }
+            function stop(){
+                clearInterval(timer);
+            }
+            //以上是自动播放
+
+            next.onclick = function(){
+                if(index == 3){
+                    index = 1;
+                }
+                else {
+                    index += 1;
+                }
+                showButton();
+                if(!animated) {
+                    animate(-1440);
+                }
+            }
+            //以上点击向右按钮的函数
+            prev.onclick = function(){
+                if(index == 1){
+                    index = 3;
+                }
+                else {
+                    index -= 1;
+                }
+                showButton();
+                if(!animated) {
+                    animate(1440);
+                }
+            }
+            //以上点击向左按钮的函数
+            for(var i = 0;i < buttons.length;i ++){
+                buttons[i].onclick = function(){
+                    if (this.className == "on"){
+                        return;
+                    }
+                    var myindex = parseInt(this.getAttribute("index"));
+                    var offset = -1440 * (myindex - index);
+                    animate(offset);
+                    index = myindex;
+                    showButton();
+                    if(!animated) {
+                        animate(offset);
+                    }
+                }
+            }
+
+            picture.onmouseover = stop();
+            picture.onmouseout = play();
+            //以上是在否图上自动播放
+        }
+    </script>
+</head>
+<body>
+<div id="picture">
+    <div id="list" style="left: -1440px;">
+        <img src="images/tl3.jpg" alt="3">
+        <img src="images/tl1.jpg" alt="1">
+        <img src="images/tl2.jpg" alt="2">
+        <img src="images/tl3.jpg" alt="3">
+        <img src="images/tl1.jpg" alt="1">
+    </div>
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+</div>
+</body>
+</html>

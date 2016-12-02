@@ -4,6 +4,119 @@
     <meta charset="UTF-8">
     <title>main</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript">
+        //当网页加载完了才运行
+        window.onload = function(){
+            var picture = document.getElementById("picture");
+            //获取容器，getElementById用来获取id
+            var list = document.getElementById("list");
+            //获取list列表
+            var buttons = document.getElementById("buttons").getElementsByTagName("span");
+            //获取按钮
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+            //获取左右按钮
+            var index = 1;
+            var animated = false;
+            var timer;
+
+            function showButton(){
+                for (var i = 0;i <buttons.length; i++){
+                    if (buttons[i].className == "on") {
+                        buttons[i].className = "";
+                        break;
+                    }
+                }
+                buttons[index - 1].className = "on";
+            }
+            //以上规定下面的小灯
+
+            function animate(offset){
+                animated = true;
+                var newleft = parseInt(list.style.left) + offset;
+                var time = 1000;//总时间
+                var interval = 10;//间隔时间
+                var speed = offset/(time/interval);//每次移动距离
+
+                //下面是自动轮播
+                function go(){
+                    if ((speed < 0 && parseInt(list.style.left)>newleft) || (speed > 0 && parseInt(list.style.left) < newleft)){
+                        list.style.left = parseInt(list.style.left) + speed +"px";
+                        setTimeout(go,interval);
+                    }
+                    else {
+                        animated = false;
+                        list.style.left = newleft + "px";
+                        if(newleft > -1440) {
+                            list.style.left = -4320 + "px";
+                        }
+                        if(newleft < -4320) {
+                            list.style.left = -1440 + "px";
+                        }
+                    }
+                }
+                go();
+
+            }
+            //以上是点击按钮的总函数
+
+            function play(){
+                timer = setInterval(function(){
+                    next.onclick();
+                },5000);
+            }
+            function stop(){
+                clearInterval(timer);
+            }
+            //以上是自动播放
+
+            next.onclick = function(){
+                if(index == 3){
+                    index = 1;
+                }
+                else {
+                    index += 1;
+                }
+                showButton();
+                if(!animated) {
+                    animate(-1440);
+                }
+            }
+            //以上点击向右按钮的函数
+            prev.onclick = function(){
+                if(index == 1){
+                    index = 3;
+                }
+                else {
+                    index -= 1;
+                }
+                showButton();
+                if(!animated) {
+                    animate(1440);
+                }
+            }
+            //以上点击向左按钮的函数
+            for(var i = 0;i < buttons.length;i ++){
+                buttons[i].onclick = function(){
+                    if (this.className == "on"){
+                        return;
+                    }
+                    var myindex = parseInt(this.getAttribute("index"));
+                    var offset = -1440 * (myindex - index);
+                    animate(offset);
+                    index = myindex;
+                    showButton();
+                    if(!animated) {
+                        animate(offset);
+                    }
+                }
+            }
+
+            picture.onmouseover = stop();
+            picture.onmouseout = play();
+            //以上是在否图上自动播放
+        }
+    </script>
 </head>
 <body>
     <div class="top over">
@@ -99,8 +212,21 @@
 <!--nav-->
 
 <!--pic-->
-    <div class="pic">
-        <img src="images/gj_31.png">
+    <div id="picture">
+        <div id="list" style="left: -1440px;">
+            <img src="images/gj_31.png" alt="3">
+            <img src="images/gj_31.png" alt="1">
+            <img src="images/gj_31.png" alt="2">
+            <img src="images/gj_31.png" alt="3">
+            <img src="images/gj_31.png" alt="1">
+        </div>
+        <div id="buttons">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+        </div>
+        <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+        <a href="javascript:;" id="next" class="arrow">&gt;</a>
     </div>
 <!--pic-->
 
