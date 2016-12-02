@@ -1,0 +1,168 @@
+   <style type="text/css">
+      .top{
+         height: 38px;
+         min-width: 1140px;
+         background: rgb(51,51,51);
+      }
+      .lefttop{
+         height: 38px;
+         width: 30%;
+         position: relative;
+         float: left;
+      }
+      .righttop{
+         width: 30%;
+         height: 38px;
+         position: relative;
+         float: left;
+      }
+      .ltimg{
+         position: absolute;
+         top: 8px;
+         left: 62px;
+      }
+      .lefttop h6{
+         position: absolute;
+         top: -3px;
+         left: 87px;
+         color:rgb(186,186,186);
+         font-family: '微软雅黑';
+      }
+      .lefttop h5{
+         position: absolute;
+         left: 200px;
+         color: rgb(255,255,255);
+         font-family: '微软雅黑';
+      }
+      .ltsan{
+         width: 0px;
+         height: 0px;
+         border-top: 10px solid white;
+         border-left: 5px solid transparent;
+         border-right: 5px solid transparent;
+         position: absolute;
+         left: 240px;
+         top: 12px;
+      }
+      .middletop{
+         height: 38px;
+         position: relative;
+         float: left;
+      }
+      .middletop h6{
+         font-family: '微软雅黑';
+         float: left;
+         color: rgb(186,186,186);
+         margin-top: 8px;
+      }
+      .mt{
+         width: 82px;
+         height: 22px;
+         border:2px solid rgb(186,186,186);
+         border-radius: 11px;
+         margin: 6.5px 35px;
+         float: left;
+      }
+      .mt a{
+         text-decoration: none;
+         color: rgb(186,186,186);
+          margin:8px;
+         line-height: 22px;
+      }
+      .mt a:hover{
+         color: blue;
+      }
+      a.mt0{
+         margin: 15px;
+      }
+      .righttop h5{
+         font-family: '微软雅黑';
+         float: left;
+         color: rgb(186,186,186);
+         margin-top: 10px;
+      }
+      .rtimg{
+         width: 28px;
+         height: 29px;
+         float: left;
+         margin: 5px 30px;
+      }
+      .rtimg a:hover{
+
+      }
+
+      .nav{
+         height: 96px;
+         min-width: 1140px;
+      }
+      .leftnav{
+         height: 96px;
+         width: 30%;
+         float: left;
+         position: relative;
+      }
+      .leftnav img{
+         position: absolute;
+         left: 55px;
+         top: 15px;
+      }
+      .rightnav{
+         height: 96px;
+         overflow: hidden;
+      }
+      .rightnav ul{
+         margin-top: 38px;
+      }
+      .rightnav li{
+         float: left;
+         margin-left: 56px;
+      }
+      .rightnav a{
+         color: black;
+         font-family: '微软雅黑';
+      }
+
+      .banner{
+         height: 527px;
+      }
+      .bannerimg img{
+
+         width: 100%;
+      }
+
+    .zhuangxiubaozhang{
+         height: 333px;
+         position: relative;
+         margin-top: 40px;
+      }
+      .ztop{
+         height: 111px;
+      }
+      .ztop h2{
+         color: rgb(53,53,53);
+         font-family: '微软雅黑';
+         float: left;
+         margin:30px 30px 30px 96px;
+      }
+      .ztop h6{
+         color: rgb(142,141,141);
+         font-family: '微软雅黑';
+         float: left;
+         margin:30px 30px 30px 96px;
+      }
+      .zbottom{
+         width: 1326px;
+         height: 187px;
+         margin: 0px auto;
+      }
+      .zbimg{
+         width: 394px;
+         height: 187px;
+         float: left;
+         margin-right: 72px;
+      }
+      .zbimg01{
+         width: 394px;
+         height: 187px;
+         float: left;
+      }
