@@ -1,0 +1,29 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+img{
+	border: none;
+	display: block;
+}
+span{
+	display: inline-block;
+}
+.clearfloat:after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+.clearfloat{
+	zoom:1;
+}

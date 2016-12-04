@@ -1,0 +1,535 @@
+.g-top-wrap{
+	width: 100%;
+	min-width: 1330px;
+	background-color: #333;
+}
+.f-size12{
+    font-size: 12px;
+}
+.ft-l{
+	float: left;
+}
+.ft-r{
+	float: right;
+}
+
+
+/*最顶层头部*/
+.g-top-wrap .g-top{
+	width: 1330px;
+	margin: 0 auto;
+	height: 40px;
+}
+.g-top-wrap .g-top .site{
+	padding-top: 10px;
+}
+.g-top-wrap .g-top .site .site-img{
+	width: 14px;
+	height: 20px;
+	margin-left:10px;
+}
+.site-spans{
+	width: 144px;
+}
+.g-top-spans{
+	margin-left: 16px;
+	color: #bababa;
+}
+.g-top-triangle{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #bababa; 
+    margin-left: 6px;
+    margin-top: 7px;
+}
+.g-top-r{
+    padding-top:10px;
+    margin-right: 20px;
+}
+.g-top-r .welcome-guju{
+	color: #bababa;
+	margin-top: 6px;
+}
+.g-top-r .online{
+	border: 1px solid #bababa;
+	margin-left:24px;
+	padding: 4px;
+	border-radius: 12px;
+}
+.g-top-r .online a{
+	color: #bababa;
+}
+.g-top-r .share{
+	color: #bababa;
+	margin-top: 6px;
+	margin-left: 36px;
+}
+.g-top-r .share-link{
+	width: 27px;
+	height: 27px;
+	margin-left: 36px;
+	margin-top:-3px;
+}
+
+
+/* 头部logo和导航 */
+.public-header-wrap{
+	width: 100%;
+	min-width: 1330px;
+	height: 96px;
+}
+.public-header{
+	width: 1330px;
+	margin: 0 auto;
+}
+.public-header .public-header-logo{
+	margin-top: 20px;
+}
+
+.public-header .public-header-logo a{
+	width: 157px;
+	height: 56px;
+}
+
+.public-header .nav{
+	margin-top: 20px;
+}
+.public-header ul li{
+	margin-right: 29px;
+}
+.public-header ul li a{
+    text-decoration: none;
+    padding: 15px 15px;
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: "microsoft yahei";
+    transition: color .4s ease-in,background .4s ease-in,box-shadow .4s ease-in;
+}
+.public-header ul li a:hover{
+	color: #fff;
+	background-color: #275599;
+}
+.public-header .nav .search{
+    margin-top: 14px;
+}
+.public-header .nav .search a{
+	width: 23px;
+	height: 23px;
+	margin-right:34px;
+}
+
+
+
+
+/* 大图轮播 */
+ #container{ 
+ 	width: 100%; 
+ 	min-width: 1330px;
+ 	height: 527px; 
+ 	overflow: hidden; 
+ 	position: relative;
+ 	margin: 0 auto;
+ }
+#list { 
+	width: 500%; 
+	height: 527px; 
+	position: absolute; 
+	z-index: 1;
+}
+#list img { 
+	float: left;
+	width: 20%;
+}
+#buttons { 
+	position: absolute; 
+	z-index: 2; 
+	bottom: 20px;
+	left: 580px; 
+}
+#buttons span { 
+	cursor: pointer; 
+	float: left; 
+	border: 1px solid #bababa; 
+	width: 60px; 
+	height: 4px;  
+	margin-right: 50px;
+}
+#buttons .on {  
+	background: #5ca9ff;
+}
+.arrow { 
+	cursor: pointer; 
+	display: none; 
+	line-height: 39px; 
+	text-align: center; 
+	font-size: 36px; 
+	font-weight: bold; 
+	width: 40px; 
+	height: 40px;  
+	position: absolute; 
+	z-index: 2; top: 180px; 
+	background-color: #000;
+	opacity: 0.3;
+	color: #fff;
+}
+.arrow:hover { 
+	background-color: #000;
+	opacity: 0.7;
+}
+#container:hover .arrow { 
+	display: block;
+}
+#prev { 
+	left: 20px;
+}
+#next { 
+	right: 20px;
+}
+
+
+
+/* 谷居装修保障 */
+.decoration{
+	width: 1330px;
+	margin:0 auto;
+	margin-top: 46px;
+}
+.title-h3{
+    font-size: 32px;
+}
+.title-span{
+	margin-top:16px;
+	margin-left:12px;
+	color: #bababa;
+	font-size: 14px;
+}
+.decoration-img{
+	width: 394px;
+	margin-right: 70px;
+}
+
+
+
+
+/* 谷居服务流程 */
+.service{
+	margin-top: 40px;
+}
+.service .service-title{
+	width: 1330px;
+	margin: 0 auto;
+}
+.service .serve{
+	width: 100%;
+	min-width: 1330px;
+    background-color: #f5f5f5;
+}
+.service .serve .serve-wrap{
+	width: 1330px;
+	margin:0 auto;
+	margin-top: 30px;
+	height: 430px;
+}
+.service .serve .serve-wrap .service-five{
+	width: 240px;
+	height: 400px;
+	background-color: #fff;
+	margin:12px 12px;
+    box-shadow: 0px 4px 15px #cfcfcf;
+}
+.service .serve .serve-wrap .service-five .service-box{
+	width: 160px;
+	height: 100px;
+	margin:0 auto;
+	border-bottom: 1px solid #8d8b8b;
+}
+.service-box-s{
+	font-size: 60px;
+	font-family: 方正姚体简体;
+	color: #8d8b8b;
+	margin: 14px 50px;
+}
+.service .serve .serve-wrap .service-five a{
+	margin-top: 26px;
+	text-align: center;
+	color:#353535;
+	font-size: 20px;
+	font-family: 微软雅黑；
+}
+.service .serve .serve-wrap .service-five .box-img{
+	width: 160px;
+	height: 160px;
+	border-radius:20px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+
+
+
+/* 郑州热门案例 */
+.hot{
+	width: 1330px;
+	margin:0 auto;
+	margin-top: 46px;
+}
+.hot .hot-case{
+	margin-top: 26px;
+}
+.hot .hot-case-r{
+	margin-right: 30px;
+}
+.hot .hot-case .hot-cases{
+	width: 310px;
+	height: 400px;
+	background-color: #f5f5f5;
+}
+.hot .hot-case .hot-cases .hot-cases-img{
+	width: 310px;
+	height: 280px;
+}
+.hot .hot-case .hot-cases .hot-cases-h4{
+	margin-top: 14px;
+	font-size: 16px;
+	font-family: 微软雅黑;
+	text-align:center;
+}
+.hot .hot-case .hot-cases .hot-cases-in{
+	margin-top: 16px;
+	font-size: 14px;
+	font-family: 宋体;
+	text-align:center;
+}
+.hot .hot-case .hot-cases .hot-cases-in span{
+	margin: 0 22px;
+}
+.hot .hot-case .hot-cases .hot-cases-hn{
+	margin-left: 150px;
+	margin-top: 20px;
+	margin:20px 32px 18px 150px;
+}
+.hot .hot-case .hot-cases .hot-cases-hn img{
+	margin-right: 14px;
+}
+.hot .hot-case .hot-cases .hot-cases-hn .hn-span{
+	margin-right:14px;
+}
+
+
+
+/* 郑州优秀设计师 */
+.designer-company{
+	width: 1330px;
+	margin: 0 auto;
+    margin-top:50px;
+}
+.designer{
+    width: 834px;
+}
+.designer .designers{
+	width: 834px;
+	height: 390px;
+	background-color: #f5f5f5;
+	margin-top: 30px;
+}
+.designer .designers .designers-img{
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+	margin-top: 30px;
+	margin-right: 16px;
+	margin-left: 10px;
+}
+.designer .designers .excellent-d{
+	width: 278px;
+	height: 195px;
+}
+.designer .designers .excellent-d .names{
+    padding-top: 56px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+}
+.designer .designers .excellent-d .experience{
+	padding-top: 20px;
+	font-size: 14px;
+    font-family: 微软雅黑;
+}
+.company{
+	width: 470px;
+}
+.company .companys{
+	width: 470px;
+	height: 390px;
+	background-color: #f5f5f5;
+	margin-top: 30px;
+}
+.company .companys .companys-h4{
+	font-size: 14px;
+	font-family: 宋体;
+	color: #353535;
+	margin-left: 24px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+.company .companys .companys-span{
+	font-family: 微软雅黑;
+	font-size: 20px;
+	margin-right: 40px;
+}
+
+
+
+
+/* 热门装修攻略 */
+.ways{
+	width: 1330px;
+	margin:0 auto;
+	margin-top: 46px;
+	height: 540px;
+}
+.ways .ways-title{
+	margin-bottom: 10px;
+}
+.ways .ways-case{
+	width: 656px;
+	height: 200px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.ways .ways-case .ways-case-img{
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+}
+.ways .ways-case .ways-case-in{
+	width: 320px;
+}
+.ways .ways-case .ways-case-in .ways-case-h5{
+	font-size: 14px;
+	font-family: 微软雅黑;
+	margin-bottom: 20px;
+
+}
+.ways .ways-case .ways-case-in .ways-case-intro{
+	font-family: 宋体;
+	font-size:13px;
+	line-height: 35px;
+}
+.ways .ways-case .ways-case-in .ways-case-intro span{
+	color: #f25618;
+	font-family: 宋体;
+	font-size:13px;
+	line-height: 35px;
+}
+.ways-cases-hn{
+	margin-right: 20px;
+}
+.hn-img{
+	margin-right:18px;
+}
+.ways-cases-hn .hn-span{
+	margin-right:18px;
+}
+
+
+
+/* 友情链接 */
+.friend-link{
+	margin-top:50px;
+	width: 100%;
+	min-width: 1330px;
+	height: 50px;
+	background-color: #f5f5f5;
+}
+.friend-link .f-nav{
+	width: 1330px;
+	margin: 0 auto;
+	height: 50px;
+}
+.friend-link .f-nav span{
+	font-family: 微软雅黑；
+	font-size:16px;
+	margin-right:56px;
+	margin-top: 20px;
+}
+.friend-link .f-nav ul li a{
+	margin-right: 46px;
+	margin-top:20px;
+}
+
+
+
+
+
+.footer .footer-top{
+	width: 100%;
+	min-width: 1330px;
+	height: 220px;
+	background-color: #2f2f2f;
+}
+.footer-top-wrap{
+    width: 1330px;
+    margin: 0 auto;
+    height: 220px;
+}
+.footer .footer-top .footer-top-wrap .guju-nav{
+	width: 300px;
+	margin-right:160px;
+}
+.footer .footer-top .footer-top-wrap .guju-nav h5{
+	padding-top: 30px;
+	font-size: 16px;
+	font-family: 微软雅黑;
+	color: #fff;
+}
+.footer .footer-top .footer-top-wrap .guju-nav ul li a{
+	float: left;
+	padding: 30px 28px 0 0;
+	color: #fff;
+}
+.footer .footer-top .footer-top-wrap .about-us ul li a{
+	padding-top: 17px;
+	color: #fff;
+}
+.footer .footer-top .footer-top-wrap .about-us{
+	width: 116px;
+}
+.guju-wechat{
+	width: 300px;
+	height: 220px;
+	float: left;
+}
+.guju-wechat img{
+	margin-top: 30px;
+}
+.guju-wechat ul li a{
+	margin-top: 50px;
+	margin-left:2px;
+	color: #fff;
+}
+.footer-bottom{
+	width: 100%;
+	height: 44px;
+	min-width: 1330px;
+	background-color: #2b2b2b;
+	color: #fff;
+	padding-top: 18px;
+	text-align: center;
+}
+
+
+.btn-group{
+	margin-right:10px;
+}
+.btn{
+	display: inline-block;
+	margin-right: 12px;
+	width: 9px;
+	height: 9px;
+	background: #dedede;
+	border-radius: 50%;
+}
+.active{
+	background: #9b9b9b;
+}
