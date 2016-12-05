@@ -44,19 +44,21 @@
 				<li><a  href="">设计师</a></li>
 			</ul>
 		</div>
-		<div  class="m-caou" id="m-carousel1">
-			<img  src="./images/bgimg.png">
-			<!-- <ul class="carousel1 clearfix">
-				<li class='pic'><a  href=""><img  src="./images/bgimg.png"></a></li>
-				<li class='pic'><a  href=""><img  src="./images/bgimg.png"></a></li>
-				<li class='pic'><a  href=""><img  src="./images/bgimg.png"></a></li>
-				<li class='pic'><a  href=""><img  src="./images/bgimg.png"></a></li>
+		<div  class="m-caou clearfix" id="m-carousel1">
+			<ul class="carousel1 clearfix">
+				<li class='pic'><img  src="./images/bgimg.png"></li>
+				<li class='pic'><img  src="./images/bgimg.png"></li>
+				<li class='pic'><img  src="./images/bgimg.png"></li>
+				<li class='pic'><img  src="./images/bgimg.png"></li>
 			</ul>
 			<div  class="banner">
-				<ul class="list clearfix">
-			
+				<ul class="lits clearfix">
+					<li index="0" class="on"></li>
+					<li index="1"></li>
+					<li index="2"></li>
+					<li index="3"></li>
 				</ul>
-			</div> -->
+			</div>
 		</div>
 	</div>
 	<div class="g-main">
@@ -68,44 +70,66 @@
 				<li><a  href=""><img src="./images/3.png"></img></a></li>
 			</ul>
 		</div>
-		<div class="m-ser smwidth">
-			<p class="sbn">谷居服务流程
-			<span class="spn">业主权益第一，谷居始终保障着业主装修每一步</span></p>
-			<div  class="m-caou2" id="m-carousel2">
-				<ul class="carousel2 clearfix">
-					<li class='cot'>
-					<p class="num">01</p>
-					<p  class="item"><a href="">报名</a></p>
-					<div class="pic"><a  href=""><img  src="./images/01.png"></a></div>
-					</li>
-					<li class='cot'>
-					<p class="num">02</p>
-					<p class="item"><a href="">报名</a></p>
-					<div class="pic"><a  href=""><img  src="./images/02.png"></a></div>
-					</li>
-					<li class='cot'>
-					<p class="num">03</p>
-					<p class="item"><a href="">报名</a></p>
-					<div class="pic"><a  href=""><img  src="./images/03.png"></a></div>
-					</li>
-					<li class='cot'>
-					<p class="num">04</p>
-					<p class="item"><a href="">报名</a></p>
-					<div class="pic"><a  href=""><img  src="./images/04.png"></a></div>
-					</li>
-					<li class='cot'>
-					<p class="num">05</p>
-					<p class="item"><a href="">报名</a></p>
-					<div class="pic"><a  href=""><img  src="./images/04.png"></a></div>
-					</li>
-				</ul>
-				<div  class="banner">
-					<ul class="list clearfix">
-				
-					</ul>
+			<div class="m-ser">
+				<p class="sbn smwidth">谷居服务流程
+				<span class="spn">业主权益第一，谷居始终保障着业主装修每一步</span></p>
+				<div class="m-contain">
+					<div  class="m-caou2 smwidth" id="m-carousel2">
+						<ul class="carousel2 clearfix">
+							<li class='cot'>
+							<p class="num">01</p>
+							<p  class="item"><a href="">报名</a></p>
+							<div class="pic"><a  href=""><img  src="./images/01.png"></a></div>
+							<div class="bgreen">
+								<p class="num">01</p>
+								<p  class="item"><a href="">报名</a></p>
+							</div>
+							</li>
+							<li class='cot'>
+							<p class="num">02</p>
+							<p class="item"><a href="">报名</a></p>
+							<div class="pic"><a  href=""><img  src="./images/02.png"></a></div>
+							<div class="bgreen">
+								<p class="num">02</p>
+								<p  class="item"><a href="">报名</a></p>
+							</div>
+							</li>
+							<li class='cot'>
+							<p class="num">03</p>
+							<p class="item"><a href="">报名</a></p>
+							<div class="pic"><a  href=""><img  src="./images/03.png"></a></div>
+							<div class="bgreen">
+								<p class="num">03</p>
+								<p  class="item"><a href="">报名</a></p>
+							</div>
+							</li>
+							<li class='cot'>
+							<p class="num">04</p>
+							<p class="item"><a href="">报名</a></p>
+							<div class="pic"><a  href=""><img  src="./images/04.png"></a></div>
+							<div class="bgreen">
+								<p class="num">04</p>
+								<p  class="item"><a href="">报名</a></p>
+							</div>
+							</li>
+							<li class='cot'>
+							<p class="num">05</p>
+							<p class="item"><a href="">报名</a></p>
+							<div class="pic"><a  href=""><img  src="./images/04.png"></a></div>
+							<div class="bgreen">
+								<p class="num">05</p>
+								<p  class="item"><a href="">报名</a></p>
+							</div>
+							</li>
+						</ul>
+						<div  class="banner">
+							<ul class="list clearfix">
+						
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
 		<div class="m-hcase smwidth clearfix">
 			<p class="sbn">郑州热门案例<span class="spn">已有 4956751 位业主找到灵感</span></p>
 			<div class="content">
@@ -153,72 +177,268 @@
 				</div>
 			</div>
 		</div>
-		<div class="m-peraform smwidth">
-			<div class="m-designer">
+		<div class="m-peraform smwidth clearfix">
+			<div class="m-designer" id="m-designer">
 				<p class="sbn">郑州优秀设计师<span class="spn">已为 6587210 位业主创造惊喜</span></p>
 				<div class="m-caou3" id="m-carousel3">
-					<div class="display1">
-						<div class="con">
-							<div class="img">
-								<img src="./images/design1.png">
+					<div class="display">
+						<div class="display1">
+							<div class="con">
+								<div class="img">
+									<img src="./images/design1.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
-							<div class="descript">
-								<p>昀阳</p>
-								<p><span>设计经验:</span><span>4年</span></p>
-								<p><span>设计风格:</span><span>现代</span></p>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design2.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design3.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design4.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design5.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design6.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
 						</div>
-						<div class="con">
-							<div class="img">
-								<img src="./images/design2.png">
+						<div class="display1">
+							<div class="con">
+								<div class="img">
+									<img src="./images/design1.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
-							<div class="descript">
-								<p>昀阳</p>
-								<p><span>设计经验:</span><span>4年</span></p>
-								<p><span>设计风格:</span><span>现代</span></p>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design2.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design3.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design4.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design5.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design6.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
 						</div>
-						<div class="con">
-							<div class="img">
-								<img src="./images/design3.png">
+						<div class="display1">
+							<div class="con">
+								<div class="img">
+									<img src="./images/design1.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
-							<div class="descript">
-								<p>昀阳</p>
-								<p><span>设计经验:</span><span>4年</span></p>
-								<p><span>设计风格:</span><span>现代</span></p>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design2.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design3.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design4.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design5.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design6.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
 						</div>
-						<div class="con">
-							<div class="img">
-								<img src="./images/design4.png">
+						<div class="display1">
+							<div class="con">
+								<div class="img">
+									<img src="./images/design1.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
-							<div class="descript">
-								<p>昀阳</p>
-								<p><span>设计经验:</span><span>4年</span></p>
-								<p><span>设计风格:</span><span>现代</span></p>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design2.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design3.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design4.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design5.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
+							</div>
+							<div class="con">
+								<div class="img">
+									<img src="./images/design6.png">
+								</div>
+								<div class="descript">
+									<p>昀阳</p>
+									<p><span>设计经验:</span><span>4年</span></p>
+									<p><span>设计风格:</span><span>现代</span></p>
+								</div>
 							</div>
 						</div>
-						<div class="con">
-							<div class="img">
-								<img src="./images/design5.png">
-							</div>
-							<div class="descript">
-								<p>昀阳</p>
-								<p><span>设计经验:</span><span>4年</span></p>
-								<p><span>设计风格:</span><span>现代</span></p>
-							</div>
-						</div>
-						<div class="con">
-							<div class="img">
-								<img src="./images/design6.png">
-							</div>
-							<div class="descript">
-								<p>昀阳</p>
-								<p><span>设计经验:</span><span>4年</span></p>
-								<p><span>设计风格:</span><span>现代</span></p>
-							</div>
-						</div>
-					</div>
+					</div>	
+				</div>
+				<div  class="banner">
+					<ul class="lits clearfix">
+						<li index="0" class="on"></li>
+						<li index="1"></li>
+						<li index="2"></li>
+						<li index="3"></li>
+					</ul>
 				</div>
 			</div>
 			<div class="m-form">
@@ -337,12 +557,19 @@
 				</div>
 				<div class="pichat">
 					<div class="chat">
-						<img  src="./images/wechat.png">
+						<img  src="./images/wechatf.jpg">
 					</div>
-					<p>关注谷居微信关注谷居微信 获得10000套装修案例</p>
+					<div class="text">
+					<p>关注谷居微信</p>
+					<p>获得10000套装修案例</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="baqu">
+		  <p>Copyright ©2012-2015 Guju.com.cn, All Rights Reserved. 沪ICP备100</p>
+		</div>
 	</div>
+	<script type="text/javascript"  src="./js/style.js"></script>
 </body>
 </html>
